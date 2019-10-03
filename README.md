@@ -70,9 +70,9 @@ const enum PacketType {
 
 `address`为`接收者`的`地址`。
 
-`rawdata`为加密的数据。
+`rawdata`为`base64`编码的加密的数据。
 
-`rawsender`为加密的`发送者`的`地址`。
+`rawsender`为`base64`编码的加密的`发送者`的`地址`。
 
 #### `rawdata`的加密
 
