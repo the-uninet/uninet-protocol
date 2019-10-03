@@ -38,7 +38,7 @@ const enum PacketType {
 
 为`[t: PacketType.RoutingTable, data]`。
 
-`data`为一个`object`，`键`为`base64`编码的`地址`，`值`为`低层地址`的数组。
+`data`为一个`object`，`键`为`地址`，`值`为`低层地址`的数组。
 
 #### 低层地址
 
@@ -60,7 +60,7 @@ const enum PacketType {
 
 为`[t: PacketType.ProxyMe, address: string]`。
 
-`address`为`base64`编码的`地址`。
+`address`为`地址`。
 
 ### Packet
 
@@ -68,11 +68,11 @@ const enum PacketType {
 
 为`[t: PacketType.Packet, address: string, rawsender: string, rawdata: string]`。
 
-`address`为`base64`编码`接收者`的`地址`。
+`address`为`接收者`的`地址`。
 
-`rawdata`为`base64`编码的加密的数据。
+`rawdata`为加密的数据。
 
-`rawsender`为`base64`编码的加密的`发送者`的`地址`。
+`rawsender`为加密的`发送者`的`地址`。
 
 #### `rawdata`的加密
 
