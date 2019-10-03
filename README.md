@@ -7,14 +7,30 @@
 
 格式`[type: PacketType, data ...]`。
 
-```
+```typescript
 const enum PacketType {
+  Servers,
+  GetServers,
   RoutingTable,
   GetRoutingTable,
   ProxyMe,
   Packet,
 }
 ```
+
+### Servers
+
+提供一些节点。可以在任何时候发出任意数量的。
+
+为`[t: PacketType.Servers, data]`。
+
+`data`为`低层地址`的数组。
+
+### GetServers
+
+获取一些节点。
+
+为`[t: PacketType.GetServers]`。
 
 ### RoutingTable
 
